@@ -36,7 +36,7 @@ from PIL import Image
 sp.os.makedirs('resized_images', exist_ok=True)
 
 for files in sp.os.listdir('.'):
-    if not (files.endswith('.jpg') or files.endswith('.png') or files.endwith('.jpeg')):
+    if not (files.endswith('.jpg') or files.endswith('.png') or files.endswith('.jpeg')):
         continue
     obj = Image.open(files)
     print("Resizing and Saving %s..." % (files))
